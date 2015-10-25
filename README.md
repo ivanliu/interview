@@ -410,6 +410,9 @@
     81) Given an unsorted integer array, find the first missing positive integer.
         For example, Given [1,2,0] return 3, and [3,4,-1,1] return 2.
         Your algorithm should run in O(n) time and uses constant space.
+    82) Rearrange an array so that arr[i] becomes arr[arr[i]] with O(1) extra space. 
+        Given an array arr[] of size n where every element is in range from 0 to n-1. 
+        Rearrange the given array so that arr[i] becomes arr[arr[i]]. This should be done with O(1) extra space.
     
 ##C5: Tree
     1) Create a binary-tree datastructure, having pre-order, in-order, and post-order traverse.
