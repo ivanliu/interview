@@ -1,9 +1,9 @@
 package com.interview.algorithms.array;
 
-import com.interview.utils.ConsoleReader;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.interview.utils.ConsoleReader;
 
 /**
  * Given an array arr[] of size n where every element is in range from 0 to n-1. 
@@ -13,16 +13,17 @@ import java.util.List;
  */
 public class C4_82_RearrangeArrayPerIndex {
 
-    public static void rearrange(Integer[] a) {
+    public static void rearrange(List<Integer> a) {
         
-        int len = a.length;
+        int len = a.size();
         
         for (int i = 0; i < len; i++) {
-            a[i] += (a[a[i]] % len) * len; 
+            int new_val = a.get(i) + (a.get(a.get(i)) % len) * len;
+            a.set(i, new_val);
         }
         
         for (int i = 0; i < len; i++) {
-            a[i] /= len;
+            a.set(i, a.get(i)/len);
         }
         
     }
@@ -42,7 +43,7 @@ public class C4_82_RearrangeArrayPerIndex {
             array.add(Integer.valueOf(input));
         }
         
-        C4_82_RearrangeArrayPerIndex.rearrange(array.toArray());
+        C4_82_RearrangeArrayPerIndex.rearrange(array);
         System.out.println("Results: " + array.toString());
     }
 
