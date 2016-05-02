@@ -1,5 +1,3 @@
-It's started! -- Kai Liu
-
 
 #Instruction
     All the interview algorithm question is organized using categories. 

@@ -27,7 +27,7 @@ public abstract class Graph {
 
     public Vertex getVertex(int value){
         for(Vertex v : this.vertexs())
-            if(v.value == value)
+            if((int)v.value == value)
                 return v;
         return null;
     }
