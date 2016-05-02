@@ -1,5 +1,6 @@
 It's started! -- Kai Liu
 
+
 #Instruction
     All the interview algorithm question is organized using categories. 
     Each question SHOULD have a implementation class and corresponding test class to verify. 
